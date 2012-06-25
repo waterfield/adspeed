@@ -1,4 +1,5 @@
 Manifest
 README.md
 Rakefile
+adpseed.gemspec
 lib/adpseed.rb
