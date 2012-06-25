@@ -11,7 +11,7 @@ class Adspeed
   
   def self.get_api(method, params)
     params = params.merge!({:key => @@api_key, :method => method})    
-    query = params.sort.map { |key, value| @"#{URI.escape(key)}=#{URI.escape(value)}"}.join("&")
+    query = params.sort.map { |key, value| "#{URI.escape(key)}=#{URI.escape(value)}"}.join("&")
     
     url = URI.parse(@@api_url + "?#{query}&md5=" + Digest::MD5.hexdigest(@@api_secret + query))
        
@@ -25,7 +25,7 @@ class Adspeed
   def self.post_api(method, params)
     params = params.merge!({:key => @@api_key, :method => method})
     
-    query = params.sort.map { |key, value| @"#{URI.escape(key)}=#{URI.escape(value)}"}.join("&")
+    query = params.sort.map { |key, value| "#{URI.escape(key)}=#{URI.escape(value)}"}.join("&")
     query += ("&md5=" + Digest::MD5.hexdigest(@@api_secret + query))
     
     url = URI.parse @@api_url
