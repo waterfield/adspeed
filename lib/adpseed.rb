@@ -9,7 +9,7 @@ class Adspeed
     @@api_url = "http://api.adspeed.com/"
   end
   
-  def self.get_api(method, params)
+  def self.get_api(method, params = {})
     params = params.merge!({:key => @@api_key, :method => method})    
     query = params.sort.map { |key, value| "#{URI.escape(key)}=#{URI.escape(value)}"}.join("&")
     
@@ -22,7 +22,7 @@ class Adspeed
     res.body
   end
   
-  def self.post_api(method, params)
+  def self.post_api(method, params = {})
     params = params.merge!({:key => @@api_key, :method => method})
     
     query = params.sort.map { |key, value| "#{URI.escape(key)}=#{URI.escape(value)}"}.join("&")
