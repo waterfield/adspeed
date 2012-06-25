@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('adpseed', '1.0') do |p|
+Echoe.new('adspeed', '1.0') do |p|
   p.description     = "Adspeed API"
   p.url             = "http://github.com/waterfield/adspeed"
   p.author          = "Waterfield Technologies"
