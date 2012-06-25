@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{Adspeed API}
   s.email = %q{info@waterfieldtech.com}
   s.extra_rdoc_files = [%q{README.md}, %q{lib/adpseed.rb}]
-  s.files = [%q{Manifest}, %q{README.md}, %q{Rakefile}, %q{lib/adpseed.rb}, %q{adpseed.gemspec}]
+  s.files = [%q{Manifest}, %q{README.md}, %q{Rakefile}, %q{adpseed.gemspec}, %q{lib/adpseed.rb}, %q{license.txt}]
   s.homepage = %q{http://github.com/waterfield/adspeed}
   s.rdoc_options = [%q{--line-numbers}, %q{--inline-source}, %q{--title}, %q{Adpseed}, %q{--main}, %q{README.md}]
   s.require_paths = [%q{lib}]
