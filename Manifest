@@ -1,6 +1,6 @@
 Manifest
 README.md
 Rakefile
-adpseed.gemspec
+adspeed.gemspec
 lib/adspeed.rb
 license.txt
