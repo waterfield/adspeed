@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Waterfield Technologies}]
-  s.date = %q{2012-06-25}
+  s.date = %q{2012-06-26}
   s.description = %q{Adspeed API}
   s.email = %q{info@waterfieldtech.com}
   s.extra_rdoc_files = [%q{README.md}, %q{lib/adspeed.rb}]
-  s.files = [%q{Manifest}, %q{README.md}, %q{Rakefile}, %q{adpseed.gemspec}, %q{lib/adspeed.rb}, %q{license.txt}, %q{adspeed.gemspec}]
+  s.files = [%q{Manifest}, %q{README.md}, %q{Rakefile}, %q{adspeed.gemspec}, %q{lib/adspeed.rb}, %q{license.txt}]
   s.homepage = %q{http://github.com/waterfield/adspeed}
   s.rdoc_options = [%q{--line-numbers}, %q{--inline-source}, %q{--title}, %q{Adspeed}, %q{--main}, %q{README.md}]
   s.require_paths = [%q{lib}]
